@@ -1,4 +1,7 @@
 Resources:
-  MyS3Bucket:
-    Type: AWS::S3::Bucket
-    Properties: {}
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: ap-south-1a
+      ImageId: ami-00531e78dd10fb3be
+      InstanceType: t3.micro
